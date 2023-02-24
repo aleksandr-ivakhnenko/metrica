@@ -257,10 +257,9 @@ a {
 		display: none;
 
 		@media (max-width: 1024px) {
-			display: inline-flex;
-			justify-content: flex-end;
-			background: none;
-			border: none;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 			font-size: 35px;
 			color: #121212;
 			cursor: pointer;
