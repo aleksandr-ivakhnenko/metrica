@@ -257,7 +257,8 @@ a {
 		display: none;
 
 		@media (max-width: 1024px) {
-			display: flex;
+			display: inline-flex;
+			justify-content: flex-end;
 			background: none;
 			border: none;
 			font-size: 35px;
