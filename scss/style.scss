@@ -247,14 +247,6 @@ a {
 		display: flex;
 		align-items: center;
 		min-height: 91px;
-
-		& > *:not(:last-child) {
-			margin-right: 50px;
-
-			@media (max-width: 1024px) {
-				margin-right: 0px;
-			}
-		}
 	}
 
 	&__logo {
