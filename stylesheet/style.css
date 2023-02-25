@@ -37,9 +37,6 @@ a {
           box-sizing: content-box;
 }
 
-.nav {
-  overflow: auto;
-}
 @media (max-width: 1024px) {
   .nav {
     background-color: #FFFFFF;
