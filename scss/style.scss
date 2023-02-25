@@ -48,6 +48,7 @@ a {
 		height: 100vh;
 		transition: all 0.5s;
 		transform: translateX(100%);
+		overflow: auto;
 
 		&::after {
 			background-color: #121212;

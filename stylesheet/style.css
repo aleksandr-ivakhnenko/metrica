@@ -37,6 +37,9 @@ a {
           box-sizing: content-box;
 }
 
+.nav {
+  overflow: auto;
+}
 @media (max-width: 1024px) {
   .nav {
     background-color: #FFFFFF;
@@ -50,6 +53,7 @@ a {
     transition: all 0.5s;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
+    overflow: auto;
   }
   .nav::after {
     background-color: #121212;
@@ -89,7 +93,7 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 25px 25px;
+    padding: 25px 25px 116px 25px;
   }
   .nav__list > *:not(:last-child) {
     margin-bottom: 25px;
@@ -259,11 +263,12 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    background: none;
-    border: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 35px;
     color: #121212;
     cursor: pointer;
