@@ -6,7 +6,7 @@ const nav = document.querySelector('.js-nav');
 const overlay = document.querySelector('.js-overlay');
 const bodyDocument = document.querySelector('body');
 
-const linkNav = document.querySelectorAll('.js-nav');
+const linkNav = document.querySelectorAll('.js-link-nav');
 
 const btn = document.querySelectorAll('.js-btn');
 const link = document.querySelectorAll('.js-link');
