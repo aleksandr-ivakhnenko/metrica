@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Manrope:regular);
-html, body {
+
+body {
   height: 100%;
   font-family: "Manrope";
   font-size: 14px;
