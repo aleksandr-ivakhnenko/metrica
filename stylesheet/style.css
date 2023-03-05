@@ -4,7 +4,7 @@ html, body {
   font-family: "Manrope";
   font-size: 14px;
   font-weight: 400;
-  line-height: 1;
+  letter-spacing: -0.03em;
   color: #121212;
   scroll-behavior: smooth;
 }
@@ -110,7 +110,6 @@ a {
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
-  letter-spacing: -0.03em;
   text-transform: uppercase;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -121,7 +120,7 @@ a {
   }
 }
 .link:hover {
-  opacity: 1;
+  opacity: 0.5;
 }
 @media (min-width: 1025px) {
   .link:hover::after {
@@ -138,6 +137,7 @@ a {
   width: 0px;
   height: 1.5px;
   background-color: #121212;
+  opacity: 0.5;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -149,7 +149,6 @@ a {
 .title {
   font-size: 18px;
   line-height: 25px;
-  letter-spacing: -0.03em;
   text-transform: uppercase;
 }
 
@@ -160,7 +159,6 @@ a {
 .subtitle {
   font-size: 30px;
   line-height: 41px;
-  letter-spacing: -0.03em;
 }
 @media (max-width: 1024px) {
   .subtitle {
@@ -184,6 +182,7 @@ a {
           box-sizing: border-box;
   background-color: #AD1818;
   padding: 0px 40px;
+  border-radius: 5px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -193,7 +192,6 @@ a {
   min-height: 67px;
   font-size: 20px;
   line-height: 27px;
-  letter-spacing: -0.03em;
   color: #FFFFFF;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -219,7 +217,6 @@ a {
 .item-apartment__link {
   font-size: 20px;
   line-height: 27px;
-  letter-spacing: -0.03em;
   color: #AD1818;
 }
 @media (max-width: 540px) {
@@ -308,10 +305,9 @@ a {
   margin-bottom: 30px;
 }
 .main__title {
-  max-width: 956px;
+  max-width: 985px;
   font-size: 60px;
   line-height: 60px;
-  letter-spacing: -0.03em;
 }
 @media (max-width: 1024px) {
   .main__title {
@@ -340,7 +336,6 @@ a {
   max-width: 430px;
   font-size: 20px;
   line-height: 27px;
-  letter-spacing: -0.03em;
   color: #FFFFFF;
 }
 @media (max-width: 1024px) {
@@ -374,7 +369,6 @@ a {
 .about-us__description {
   font-size: 45px;
   line-height: 61px;
-  letter-spacing: -0.03em;
 }
 @media (max-width: 1024px) {
   .about-us__description {
@@ -471,7 +465,6 @@ a {
   max-width: 443px;
   font-size: 30px;
   line-height: 41px;
-  letter-spacing: -0.03em;
   color: #FFFFFF;
 }
 @media (max-width: 1024px) {
@@ -517,7 +510,6 @@ a {
 .contacts__phone {
   font-size: 60px;
   line-height: 60px;
-  letter-spacing: -0.03em;
 }
 @media (max-width: 540px) {
   .contacts__phone {
@@ -526,11 +518,21 @@ a {
   }
 }
 .contacts__email {
+  display: inline-block;
+  position: relative;
   font-size: 60px;
   line-height: 60px;
-  letter-spacing: -0.03em;
   color: #121212;
   opacity: 0.5;
+}
+.contacts__email::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #121212;
 }
 @media (max-width: 540px) {
   .contacts__email {
@@ -587,7 +589,6 @@ a {
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
-  letter-spacing: -0.03em;
   text-transform: uppercase;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -609,7 +610,6 @@ a {
 .footer__text {
   font-size: 20px;
   line-height: 27px;
-  letter-spacing: -0.03em;
   color: #FFFFFF;
   opacity: 0.5;
 }

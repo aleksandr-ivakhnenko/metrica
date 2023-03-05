@@ -41,9 +41,6 @@ linkNav[1].addEventListener('click', classCheck);
 linkNav[2].addEventListener('click', classCheck);
 linkNav[3].addEventListener('click', classCheck);
 
-btn[0].addEventListener('click', function(e) {
-    e.preventDefault()
-});
 btn[1].addEventListener('click', function(e) {
     e.preventDefault()
 });
