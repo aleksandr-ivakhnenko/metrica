@@ -215,6 +215,9 @@ a {
 .item-apartment > *:not(:last-child) {
   margin-bottom: 15px;
 }
+.item-apartment__image {
+  max-height: 450px;
+}
 .item-apartment__img {
   max-width: 100%;
 }
@@ -232,6 +235,9 @@ a {
 
 .item-service > *:not(:last-child) {
   margin-bottom: 15px;
+}
+.item-service__image {
+  max-height: 270px;
 }
 .item-service__img {
   max-width: 100%;
