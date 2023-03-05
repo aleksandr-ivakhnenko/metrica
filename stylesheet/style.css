@@ -1,11 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Manrope:regular);
 
-body {
+html, body {
   height: 100%;
   font-family: "Manrope";
   font-size: 14px;
   font-weight: 400;
-  letter-spacing: -0.03em;
   color: #121212;
   scroll-behavior: smooth;
 }
@@ -111,6 +110,7 @@ a {
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
+  letter-spacing: -0.03em;
   text-transform: uppercase;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -160,6 +160,7 @@ a {
 .subtitle {
   font-size: 30px;
   line-height: 41px;
+  letter-spacing: -0.03em;
 }
 @media (max-width: 1024px) {
   .subtitle {
@@ -193,6 +194,7 @@ a {
   min-height: 67px;
   font-size: 20px;
   line-height: 27px;
+  letter-spacing: -0.03em;
   color: #FFFFFF;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -218,6 +220,7 @@ a {
 .item-apartment__link {
   font-size: 20px;
   line-height: 27px;
+  letter-spacing: -0.03em;
   color: #AD1818;
 }
 @media (max-width: 540px) {
@@ -306,9 +309,10 @@ a {
   margin-bottom: 30px;
 }
 .main__title {
-  max-width: 985px;
+  max-width: 956px;
   font-size: 60px;
   line-height: 60px;
+  letter-spacing: -0.03em;
 }
 @media (max-width: 1024px) {
   .main__title {
@@ -337,6 +341,7 @@ a {
   max-width: 430px;
   font-size: 20px;
   line-height: 27px;
+  letter-spacing: -0.03em;
   color: #FFFFFF;
 }
 @media (max-width: 1024px) {
@@ -368,8 +373,10 @@ a {
   margin-bottom: 30px;
 }
 .about-us__description {
+  max-width: 1048px;
   font-size: 45px;
   line-height: 61px;
+  letter-spacing: -0.03em;
 }
 @media (max-width: 1024px) {
   .about-us__description {
@@ -414,6 +421,7 @@ a {
   min-height: 153px;
   font-size: 30px;
   line-height: 41px;
+  letter-spacing: -0.03em;
   color: #AD1818;
 }
 @media (max-width: 540px) {
@@ -466,6 +474,7 @@ a {
   max-width: 443px;
   font-size: 30px;
   line-height: 41px;
+  letter-spacing: -0.03em;
   color: #FFFFFF;
 }
 @media (max-width: 1024px) {
@@ -511,6 +520,7 @@ a {
 .contacts__phone {
   font-size: 60px;
   line-height: 60px;
+  letter-spacing: -0.03em;
 }
 @media (max-width: 540px) {
   .contacts__phone {
@@ -523,6 +533,7 @@ a {
   position: relative;
   font-size: 60px;
   line-height: 60px;
+  letter-spacing: -0.03em;
   color: #121212;
   opacity: 0.5;
 }
@@ -590,6 +601,7 @@ a {
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
+  letter-spacing: -0.03em;
   text-transform: uppercase;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -611,6 +623,7 @@ a {
 .footer__text {
   font-size: 20px;
   line-height: 27px;
+  letter-spacing: -0.03em;
   color: #FFFFFF;
   opacity: 0.5;
 }
