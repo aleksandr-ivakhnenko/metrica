@@ -12,6 +12,10 @@ html.scroll-lock, body.scroll-lock {
   overflow: hidden;
 }
 
+h1, h2, p, span, a, .title, .subtitle {
+  letter-spacing: -0.03em;
+}
+
 a {
   text-decoration: none;
 }
@@ -110,7 +114,6 @@ a {
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
-  letter-spacing: -0.03em;
   text-transform: uppercase;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -136,7 +139,7 @@ a {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   width: 0px;
-  height: 1.5px;
+  height: 1px;
   background-color: #121212;
   opacity: 0.5;
   -webkit-transition: all 0.5s;
@@ -150,7 +153,6 @@ a {
 .title {
   font-size: 18px;
   line-height: 25px;
-  letter-spacing: -0.03em;
   text-transform: uppercase;
 }
 
@@ -161,7 +163,6 @@ a {
 .subtitle {
   font-size: 30px;
   line-height: 41px;
-  letter-spacing: -0.03em;
 }
 @media (max-width: 1024px) {
   .subtitle {
@@ -195,13 +196,9 @@ a {
   min-height: 67px;
   font-size: 20px;
   line-height: 27px;
-  letter-spacing: -0.03em;
   color: #FFFFFF;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-}
-.btn:hover {
-  background-color: #e23939;
 }
 @media (max-width: 540px) {
   .btn {
@@ -224,7 +221,6 @@ a {
 .item-apartment__link {
   font-size: 20px;
   line-height: 27px;
-  letter-spacing: -0.03em;
   color: #AD1818;
 }
 @media (max-width: 540px) {
@@ -242,6 +238,10 @@ a {
 .item-service__img {
   max-width: 100%;
 }
+.item-service__subtitle {
+  padding-left: 5px;
+}
+
 .header {
   position: relative;
   z-index: 15;
@@ -319,7 +319,6 @@ a {
   max-width: 956px;
   font-size: 60px;
   line-height: 60px;
-  letter-spacing: -0.03em;
 }
 @media (max-width: 1024px) {
   .main__title {
@@ -337,6 +336,7 @@ a {
 }
 .main__image {
   position: relative;
+  max-height: 500px;
 }
 .main__img {
   max-width: 100%;
@@ -348,7 +348,6 @@ a {
   max-width: 430px;
   font-size: 20px;
   line-height: 27px;
-  letter-spacing: -0.03em;
   color: #FFFFFF;
 }
 @media (max-width: 1024px) {
@@ -383,7 +382,6 @@ a {
   max-width: 1048px;
   font-size: 45px;
   line-height: 61px;
-  letter-spacing: -0.03em;
 }
 @media (max-width: 1024px) {
   .about-us__description {
@@ -428,7 +426,6 @@ a {
   min-height: 153px;
   font-size: 30px;
   line-height: 41px;
-  letter-spacing: -0.03em;
   color: #AD1818;
 }
 @media (max-width: 540px) {
@@ -461,7 +458,7 @@ a {
   }
 }
 .services__container > *:first-child {
-  margin-bottom: 30px;
+  margin-bottom: 34px;
 }
 .fullscreen__img {
   width: 100%;
@@ -481,7 +478,6 @@ a {
   max-width: 443px;
   font-size: 30px;
   line-height: 41px;
-  letter-spacing: -0.03em;
   color: #FFFFFF;
 }
 @media (max-width: 1024px) {
@@ -501,7 +497,7 @@ a {
 }
 
 .contacts {
-  padding: 150px 0px;
+  padding: 150px 0px 162px 0px;
 }
 @media (max-width: 1024px) {
   .contacts {
@@ -516,35 +512,46 @@ a {
     margin-bottom: 15px;
   }
 }
-.contacts__container > *:first-child {
+.contacts__title::before {
+  content: "";
+  display: block;
+  margin-left: -5px;
   margin-bottom: 12px;
+  width: 24px;
+  height: 24px;
+  background-image: url(../icons/outline-phone-iphone.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 @media (max-width: 540px) {
-  .contacts__container > *:first-child {
+  .contacts__title::before {
     margin-bottom: 5px;
   }
 }
-.contacts__phone {
+.contacts__phone span {
+  margin-left: 12px;
+}
+.contacts__link-phone {
   font-size: 60px;
   line-height: 60px;
-  letter-spacing: -0.03em;
+  color: #121212;
 }
 @media (max-width: 540px) {
-  .contacts__phone {
+  .contacts__link-phone {
     font-size: 30px;
     line-height: 30px;
   }
 }
-.contacts__email {
+.contacts__link-email {
   display: inline-block;
   position: relative;
   font-size: 60px;
   line-height: 60px;
-  letter-spacing: -0.03em;
   color: #121212;
   opacity: 0.5;
 }
-.contacts__email::after {
+.contacts__link-email::after {
   content: "";
   position: absolute;
   bottom: -10px;
@@ -554,7 +561,7 @@ a {
   background-color: #121212;
 }
 @media (max-width: 540px) {
-  .contacts__email {
+  .contacts__link-email {
     font-size: 30px;
     line-height: 30px;
   }
@@ -608,7 +615,6 @@ a {
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
-  letter-spacing: -0.03em;
   text-transform: uppercase;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -630,7 +636,6 @@ a {
 .footer__text {
   font-size: 20px;
   line-height: 27px;
-  letter-spacing: -0.03em;
   color: #FFFFFF;
   opacity: 0.5;
 }
