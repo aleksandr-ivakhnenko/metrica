@@ -1,0 +1,55 @@
+.contacts {
+  padding: 150px 0px 162px 0px;
+}
+.contacts__title {
+  margin-bottom: 32px;
+}
+.contacts__title::before {
+  content: "";
+  display: block;
+  margin-left: -5px;
+  margin-bottom: 12px;
+  width: 24px;
+  height: 24px;
+  background-image: url(../icons/outline-phone-iphone.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.contacts__item-list {
+  margin-bottom: 30px;
+}
+.contacts__item-list:last-child {
+  margin-bottom: 0;
+}
+.contacts__phone span {
+  margin-left: 12px;
+}
+.contacts__link {
+  display: inline-block;
+  position: relative;
+  font-size: 60px;
+  line-height: 60px;
+  color: #121212;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.contacts__link:hover {
+  opacity: 0.5;
+}
+.contacts__link:hover::after {
+  width: 100%;
+}
+.contacts__link::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #121212;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}

@@ -1,0 +1,30 @@
+.header {
+	position: relative;
+	z-index: 15;
+
+	&__container {
+		display: flex;
+		align-items: center;
+		min-height: 91px;
+	}
+
+	&__logo {
+		flex: 1 1 auto;
+	}
+
+	&__menu-btn {
+		display: none;
+	}
+
+	&__link {
+	}
+
+	&__img {
+		max-height: 50px;
+		object-fit: cover;
+		object-position: center;
+	}
+
+	&__nav {
+	}
+}

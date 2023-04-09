@@ -1,0 +1,46 @@
+.footer {
+	background-color: #121212;
+	padding: 60px 0px 30px 0px;
+
+	&__container {
+		text-align: center;
+	}
+
+	&__nav {
+		margin-bottom: 87px;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__item-list {
+		margin-left: 55px;
+
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+
+	&__link {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 25px;
+		text-transform: uppercase;
+		transition: all 0.5s;
+		color: #FFFFFF;
+		
+		&:hover {
+			opacity: 0.5;
+		}
+	}
+
+	&__text {
+		font-size: 20px;
+		line-height: 27px;
+		color: #FFFFFF;
+		opacity: 0.5;
+	}
+}

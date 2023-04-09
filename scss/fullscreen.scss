@@ -1,0 +1,23 @@
+.fullscreen {
+	
+	&__img {
+		width: 100%;
+		max-height: 717px;
+		object-fit: cover;
+		object-position: left;
+	}
+	
+	&__container {
+		position: relative;
+	}
+	
+	&__description {
+		position: absolute;
+		bottom: 60px;
+		left: 30px;
+		max-width: 443px;
+		font-size: 30px;
+		line-height: 41px;
+		color: #FFFFFF;
+	}
+}

@@ -1,0 +1,41 @@
+.about-us {
+  padding: 75px 0px;
+}
+@media (max-width: 1199px) {
+  .about-us {
+    padding: 60px 0px;
+  }
+}
+@media (max-width: 767px) {
+  .about-us {
+    padding: 40px 0px;
+  }
+}
+.about-us__title {
+  margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .about-us__title {
+    margin-bottom: 20px;
+  }
+}
+.about-us__description {
+  width: 1048px;
+  font-size: 45px;
+  line-height: 61px;
+  margin-bottom: 30px;
+}
+@media (max-width: 1199px) {
+  .about-us__description {
+    width: 690px;
+    font-size: 35px;
+    line-height: 48px;
+  }
+}
+@media (max-width: 767px) {
+  .about-us__description {
+    width: 340px;
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
