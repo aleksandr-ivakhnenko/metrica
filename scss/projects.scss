@@ -1,12 +1,12 @@
 .projects {
-	padding: 75px 0px 150px 0px;
+	padding: 75px 0 150px;
 
 	@media (max-width: 1199px) {
-		padding: 60px 0px 120px 0px;
+		padding: 60px 0 100px;
 	}
 
 	@media (max-width: 767px) {
-		padding: 40px 0px 80px 0px;
+		padding: 40px 0 80px;
 	}
 
 	&__container {
@@ -26,7 +26,7 @@
 		margin-bottom: 90px;
 
 		@media (max-width: 1199px) {
-			margin-bottom: 102px;
+			margin-bottom: 100px;
 		}
 	
 		@media (max-width: 767px) {
@@ -35,10 +35,58 @@
 	}
 
 	&__link-button {
+	}
+}
 
-		&:hover {
-			background-color: #AD1818;
-			color: #FFFFFF;
+.project {
+	margin-bottom: 90px;
+
+	@media (max-width: 1199px) {
+		margin-bottom: 80px;
+	}
+
+	@media (max-width: 767px) {
+		margin-bottom: 49px;
+	}
+
+
+
+	&__img {
+		display: block;
+		width: 100%;
+		height: 450px;
+		object-fit: cover;
+		object-position: center;
+		margin-bottom: 15px;
+		
+		@media (max-width: 767px) {
+			height: 250px;
+			margin-bottom: 20px;
+		}
+	}
+	
+	&__subtitle {
+		margin-bottom: 15px;
+
+		@media (max-width: 1199px) {
+			margin-bottom: 10px;
+		}
+
+		@media (max-width: 767px) {
+			margin-bottom: 11px;
+		}
+	}
+	
+	&__link {
+		font-size: 20px;
+		line-height: 27px;
+		color: #AD1818;
+
+		@media (max-width: 1199px) {}
+
+		@media (max-width: 767px) {
+			font-size: 16px;
+			line-height: 22px;
 		}
 	}
 }

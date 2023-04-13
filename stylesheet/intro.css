@@ -11,6 +11,21 @@
     padding: 30px 0 40px 0;
   }
 }
+.intro__title {
+  max-width: 956px;
+  margin-bottom: 30px;
+}
+@media (max-width: 1199px) {
+  .intro__title {
+    max-width: 802px;
+  }
+}
+@media (max-width: 767px) {
+  .intro__title {
+    max-width: 335px;
+    margin-bottom: 25px;
+  }
+}
 .intro__image {
   position: relative;
   height: 500px;
@@ -18,7 +33,7 @@
   background-image: url(../images/intro_desktop.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: left;
+  background-position: center;
 }
 @media (max-width: 1199px) {
   .intro__image {
@@ -31,7 +46,7 @@
     height: 304px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .intro__image {
     background-image: url(../images/intro_mobile.png);
   }
@@ -40,7 +55,7 @@
   position: absolute;
   bottom: 40px;
   left: 40px;
-  width: 430px;
+  max-width: 430px;
   font-size: 20px;
   line-height: 27px;
   color: #FFFFFF;
