@@ -1,0 +1,71 @@
+.button {
+  background-color: #AD1818;
+  padding: 0 40px;
+  border-radius: 5px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  min-height: 67px;
+  font-size: 20px;
+  line-height: 27px;
+  color: #FFFFFF;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .button {
+    padding: 0 27px;
+    min-height: 51px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.button-full-width {
+  background-color: #FFFFFF;
+  border: 1px solid #AD1818;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 100%;
+  min-height: 153px;
+  font-size: 30px;
+  line-height: 41px;
+  color: #AD1818;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.button-full-width:hover {
+  background-color: #AD1818;
+  color: #FFFFFF;
+}
+@media (max-width: 767px) {
+  .button-full-width {
+    min-height: 100px;
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+.button-full-width_inversion {
+  background-color: #AD1818;
+  border: 1px solid #AD1818;
+  color: #FFFFFF;
+}
+.button-full-width_inversion:hover {
+  border: 1px solid #FFFFFF;
+  background-color: #FFFFFF;
+  color: #AD1818;
+}
