@@ -38,19 +38,19 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 80px 0;
+    gap: 77px 0;
   }
 }
 
 .review {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 calc(50% - 24.5px);
-          flex: 0 1 calc(50% - 24.5px);
+      -ms-flex: 0 1 calc(50% - 45px);
+          flex: 0 1 calc(50% - 45px);
 }
 .review:last-child:nth-child(2n+1) {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 calc(75% - 24.5px);
-          flex: 0 1 calc(75% - 24.5px);
+      -ms-flex: 0 1 75%;
+          flex: 0 1 75%;
 }
 @media (max-width: 1199px) {
   .review {

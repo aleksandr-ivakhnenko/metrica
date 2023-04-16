@@ -51,3 +51,8 @@ table {
 a {
 	text-decoration: none;
 }
+
+button {
+	background: none;
+	box-sizing: border-box;
+}

@@ -1,6 +1,10 @@
 .footer {
 	background-color: #121212;
-	padding: 60px 0px 30px 0px;
+	padding: 60px 0 30px;
+
+	@media (max-width: 767px) {
+		padding: 30px 0 26px;
+	}
 
 	&__container {
 		text-align: center;
@@ -8,19 +12,23 @@
 
 	&__nav {
 		margin-bottom: 87px;
+
+		@media (max-width: 767px) {
+			margin-bottom: 41px;
+		}
 	}
 
 	&__list {
 		display: flex;
 		justify-content: center;
+		gap: 0 55px;
+
+		@media (max-width: 767px) {
+			gap: 0 30px;
+		}
 	}
 
 	&__item-list {
-		margin-left: 55px;
-
-		&:first-child {
-			margin-left: 0;
-		}
 	}
 
 	&__link {
@@ -35,6 +43,11 @@
 		&:hover {
 			opacity: 0.5;
 		}
+
+		@media (max-width: 767px) {
+			font-size: 12px;
+			line-height: 16px;
+		}
 	}
 
 	&__text {
@@ -42,5 +55,10 @@
 		line-height: 27px;
 		color: #FFFFFF;
 		opacity: 0.5;
+
+		@media (max-width: 767px) {
+			font-size: 13px;
+			line-height: 18px;	
+		}
 	}
 }

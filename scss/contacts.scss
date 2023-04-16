@@ -1,69 +1,133 @@
 .contacts {
-	padding: 150px 0px 162px 0px;
+    padding: 150px 0;
 
-	&__container {
+    @media (max-width: 1199px) {
+        padding: 120px 0;
+    }
 
-	}
+    @media (max-width: 767px) {
+        padding: 80px 0;
+    }
 
-	&__title {
-		margin-bottom: 32px;
+    &__container {
+    }
 
-		&::before {
-			content: "";
-			display: block;
-			margin-left: -5px;
-			margin-bottom: 12px;
-			width: 24px;
-			height: 24px;
-			background-image: url(../icons/outline-phone-iphone.png);
-			background-repeat: no-repeat;
-			background-size: cover;
-			background-position: center;
-		}
-	}
+    &__title {
+        margin-bottom: 74px;
 
-	&__list {
+        @media (max-width: 1199px) {
 
-	}
+        }
+    
+        @media (max-width: 767px) {
+            margin-bottom: 58px;
+        }
+    }
 
-	&__item-list {
-		margin-bottom: 30px;
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0 106px;
 
-		&:last-child {
-			margin-bottom: 0;
-		}
-	}
+        @media (max-width: 1199px) {
+            gap: 0 118px;
+        }
+    
+        @media (max-width: 767px) {
+            gap: 68px 0;
+        }
+    }
+}
 
-	&__phone span {
-		margin-left: 12px;
-	}
+.contact {
+    
+    &__number, &__telegram {
+        position: relative;
+        
+        &::before {
+            content: "";
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            background-repeat: no-repeat;
+            background-position: center;
 
-	&__link {
-		display: inline-block;
-		position: relative;
-		font-size: 60px;
-		line-height: 60px;
-		color: #121212;
-		transition: all 0.5s;
-		
-		&:hover {
-			opacity: 0.5;
-			
-			&::after {
-				width: 100%;
-			}
-		}
-		
-		&::after {
-			content: "";
-			position: absolute;
-			bottom: -10px;
-			left: 50%;
-			transform: translateX(-50%);
-			width: 0;
-			height: 2px;
-			background-color: #121212;
-			transition: all 0.5s;
-		}
-	}
+            @media (max-width: 767px) {
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+    
+    &__number {
+        &::before {
+            background-image: url(../icons/phone.svg);
+            top: -52px;
+            left: -7px;
+
+            @media (max-width: 767px) {
+                top: -36px;
+                left: -2px;
+                background-size: auto 16.5px;
+            }
+        }
+    }
+    
+    &__telegram {
+        margin-top: -10px;
+
+        &::before {
+            background-image: url(../icons/mail.svg);
+            top: -40px;
+            left: 0;
+
+            @media (max-width: 767px) {
+                top: -38px;
+                background-size: auto 12px;
+            }
+        }
+    }
+
+    &__link-number, &__link-telegram {
+        position: relative;
+        font-size: 60px;
+        line-height: 60px;
+        color: #121212;
+
+        @media (max-width: 1199px) {
+            font-size: 45px;
+            line-height: 60px;
+        }
+    
+        @media (max-width: 767px) {
+            font-size: 35px;
+            line-height: 46px;
+        }
+    }
+
+    &__link-number span {
+        margin-left: 12px;
+
+        @media (max-width: 1199px) {
+            margin-left: 10px;
+        }
+
+        @media (max-width: 767px) {
+            margin-left: 5px;
+        }
+    }
+    
+    &__link-telegram {
+        opacity: 0.5;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 2px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #121212;
+        }
+    }
 }

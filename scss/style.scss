@@ -6,7 +6,7 @@
 @import "projects.css";
 @import "services.css";
 @import "reviews.css";
-@import "fullscreen.css";
+@import "gallery.css";
 @import "contacts.css";
 @import "footer.css";
 
@@ -21,7 +21,7 @@ body {
 	}
 }
 
-h1, h2, h3, p, span, a {
+h1, h2, h3, p, span, a, button {
 	letter-spacing: -0.03em;
 }
 
@@ -166,7 +166,6 @@ h1, h2, h3, p, span, a {
 }
 
 .button {
-	box-sizing: border-box;
 	background-color: #AD1818;
 	padding: 0 40px;
 	border-radius: 5px;
@@ -188,7 +187,6 @@ h1, h2, h3, p, span, a {
 }
 
 .button-full-width {
-	box-sizing: border-box;
 	background-color: #FFFFFF;
 	border: 1px solid #AD1818;
 	border-radius: 5px;
@@ -196,6 +194,7 @@ h1, h2, h3, p, span, a {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	width: 100%;
 	min-height: 153px;
 	font-size: 30px;
 	line-height: 41px;

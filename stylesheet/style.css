@@ -5,7 +5,7 @@
 @import "projects.css";
 @import "services.css";
 @import "reviews.css";
-@import "fullscreen.css";
+@import "gallery.css";
 @import "contacts.css";
 @import "footer.css";
 body {
@@ -18,7 +18,7 @@ body.scroll-lock {
   overflow: hidden;
 }
 
-h1, h2, h3, p, span, a {
+h1, h2, h3, p, span, a, button {
   letter-spacing: -0.03em;
 }
 
@@ -170,8 +170,6 @@ h1, h2, h3, p, span, a {
 }
 
 .button {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   background-color: #AD1818;
   padding: 0 40px;
   border-radius: 5px;
@@ -199,8 +197,6 @@ h1, h2, h3, p, span, a {
 }
 
 .button-full-width {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   background-color: #FFFFFF;
   border: 1px solid #AD1818;
   border-radius: 5px;
@@ -214,6 +210,7 @@ h1, h2, h3, p, span, a {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  width: 100%;
   min-height: 153px;
   font-size: 30px;
   line-height: 41px;
