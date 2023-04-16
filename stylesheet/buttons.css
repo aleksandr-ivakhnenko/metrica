@@ -15,7 +15,6 @@
   color: #FFFFFF;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  cursor: pointer;
 }
 @media (max-width: 767px) {
   .button {
@@ -47,6 +46,7 @@
   color: #AD1818;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  cursor: pointer;
 }
 .button-full-width:hover {
   background-color: #AD1818;
