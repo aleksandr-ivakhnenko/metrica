@@ -10,7 +10,6 @@
 	line-height: 27px;
 	color: #FFFFFF;
 	transition: all 0.5s;
-	cursor: pointer;
 	
 	@media (max-width: 767px) {
 		padding: 0 27px;
@@ -34,6 +33,7 @@
 	line-height: 41px;
 	color: #AD1818;
 	transition: all 0.5s;
+	cursor: pointer;
 
 	&:hover {
 		background-color: #AD1818;
