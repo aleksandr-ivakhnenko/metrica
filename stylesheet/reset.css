@@ -55,4 +55,5 @@ a {
 button {
 	background: none;
 	box-sizing: border-box;
+	border: none;
 }

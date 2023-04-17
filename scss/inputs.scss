@@ -1,0 +1,13 @@
+.input {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    font-family: "Manrope";
+	font-weight: 400;
+    color: #000000;
+    padding: 0;
+
+    &::placeholder {
+        color: #000000;
+    }
+}

@@ -29,7 +29,7 @@
 }
 @media (max-width: 767px) {
   .footer__list {
-    gap: 0 30px;
+    gap: 0 26px;
   }
 }
 .footer__link {

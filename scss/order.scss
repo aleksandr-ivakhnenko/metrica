@@ -1,0 +1,70 @@
+.order {
+
+    &__title {
+        font-size: 45px;
+        line-height: 61px;
+        margin-bottom: 4px;
+        
+        @media (max-width: 767px) {
+            font-size: 25px;
+            line-height: 34px;
+            margin-bottom: 11px;
+        }
+        
+    }
+
+    &__description {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 60px;
+
+        @media (max-width: 767px) {
+            font-size: 14px;
+            line-height: 19px;
+            max-width: 209px;
+            margin: 0 auto 55px;
+            
+        }
+    }
+
+    &__form {
+        margin-bottom: 80px;
+
+        @media (max-width: 767px) {
+            font-size: 18px;
+            line-height: 25px;
+            margin-bottom: 60px;
+        }
+    }
+
+    &__input {
+        padding-bottom: 9px;
+        border: none;
+        border-bottom: 1px solid #000000;
+        font-size: 25px;
+        line-height: 34px;
+        margin-bottom: 50px;
+
+        @media (max-width: 767px) {
+            padding-bottom: 10px;
+            font-size: 18px;
+            line-height: 25px;
+            margin-bottom: 40px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        &::placeholder {
+            opacity: 0.5;
+        }
+    }
+    
+    &__button {
+    }
+}

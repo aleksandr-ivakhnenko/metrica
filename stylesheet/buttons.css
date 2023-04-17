@@ -1,3 +1,9 @@
+button {
+  font-family: "Manrope";
+  font-size: 14px;
+  font-weight: 400;
+}
+
 .button {
   background-color: #AD1818;
   padding: 0 40px;
@@ -63,9 +69,14 @@
   background-color: #AD1818;
   border: 1px solid #AD1818;
   color: #FFFFFF;
+  /* &:hover {
+  	border: 1px solid #FFFFFF;
+  	background-color: #FFFFFF;
+  	color: #AD1818;
+  } */
 }
-.button-full-width_inversion:hover {
-  border: 1px solid #FFFFFF;
-  background-color: #FFFFFF;
-  color: #AD1818;
+.button-full-width_small {
+  min-height: 67px;
+  font-size: 20px;
+  line-height: 27px;
 }

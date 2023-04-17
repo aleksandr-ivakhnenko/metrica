@@ -12,7 +12,7 @@
 	</head>
 	<body>
 		<div class="wrapper">
-			<!-- <header class="header" id="header">
+			<header class="header" id="header">
 				<div class="header__container container">
 					<div class="header__logo"><a class="header__link" href="index.html"><img src="images/logo.svg" alt="Логотип компании Метрика" class="header__img"></a></div>
 					<span class="header__menu-btn material-symbols-outlined">menu</span>
@@ -21,12 +21,28 @@
 							<li class="nav__item-list"><a class="nav__link link" href="#about-us">О нас</a></li>
 							<li class="nav__item-list"><a class="nav__link link" href="#projects">Проекты</a></li>
 							<li class="nav__item-list"><a class="nav__link link" href="#services">Услуги</a></li>
+							<li class="nav__item-list"><a class="nav__link link" href="#reviews">Отзывы</a></li>
 							<li class="nav__item-list"><a class="nav__link link" href="#contacts">Контакты</a></li>
 						</ul>
 					</nav>
 				</div>
-			</header> -->
+			</header>
 			<main class="main">
+				<div class="popup js-popup">
+					<div class="popup__content js-popup__content">
+						<button class="popup__close-button js-popup__close-button"></button>
+						<div class="order">
+							<div class="order__title">Заказать услугу</div>
+							<p class="order__description">Заполните форму, мы свяжемся с вами в течение суток</p>
+							<form class="order__form" id="order__form" method="get">
+								<input class="order__input input" type="text" name="name" placeholder="Имя">
+								<input class="order__input input" type="email" name="email" placeholder="Электронная почта">
+								<input class="order__input input" type="tel" name="phone" placeholder="Номер телефона">
+							</form>
+							<button class="order__button button-full-width button-full-width_inversion button-full-width_small" type="submit" form="order__form">Отправить</button>
+						</div>
+					</div>
+				</div>
 				<section class="intro">
 					<div class="intro__container container">
 						<h1 class="intro__title main-title">Современные и стильные интерьеры для комфортной жизни</h1>
@@ -118,7 +134,7 @@
 								<span class="service__label">5% от стоимости</span>
 							</li>
 						</ul>
-						<button class="projects__link-button button-full-width button-full-width_inversion">Заказать услугу</button>
+						<button class="projects__link-button js-projects__link-button button-full-width button-full-width_inversion js-btn">Заказать услугу</button>
 					</div>
 				</section>
 				<section class="reviews" id="reviews">
@@ -189,7 +205,7 @@
 						</div>
 					</div>
 				</section>
-				<section class="contacts">
+				<section class="contacts" id="contacts">
 					<div class="contacts__container container">
 						<h2 class="contacts__title title">Контакты</h2>
 						<div class="contacts__items">
@@ -203,19 +219,6 @@
 					</div>
 				</section>
 			</main>
-			<!-- <div class="popup popup_active">
-				<div class="popup__content">
-					<div class="popup__button"></div>
-					<div class="popup__title">Заказать услугу</div>
-					<p class="popup__description">Заполните форму, мы свяжемся с вами в течение суток</p>
-					<form class="popup__form" action="">
-						<input class="popup__item-form" type="text" name="" id="" placeholder="Имя">
-						<input class="popup__item-form" type="email" name="" id="" placeholder="Электронная почта">
-						<input class="popup__item-form" type="tel" name="" id="" placeholder="Номер телефона">
-						<input class="popup__button-form" type="submit" value="Отправить">
-					</form>
-				</div>
-			</div> -->
 			<footer class="footer">
 				<div class="footer__container container">
 					<nav class="footer__nav">
@@ -223,6 +226,7 @@
 							<li class="footer__item-list"><a class="footer__link" href="#about-us">О нас</a></li>
 							<li class="footer__item-list"><a class="footer__link" href="#projects">Проекты</a></li>
 							<li class="footer__item-list"><a class="footer__link" href="#services">Услуги</a></li>
+							<li class="footer__item-list"><a class="footer__link" href="#reviews">Отзывы</a></li>
 							<li class="footer__item-list"><a class="footer__link" href="#contacts">Контакты</a></li>
 						</ul>
 					</nav>
@@ -232,5 +236,6 @@
 		</div>
 
 		<script src="js/gallery.js"></script>
+		<script src="js/popup.js"></script>
 	</body>
 </html>
