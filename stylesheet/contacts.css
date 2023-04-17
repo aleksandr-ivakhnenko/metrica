@@ -34,6 +34,10 @@
 }
 @media (max-width: 767px) {
   .contacts__items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 68px 0;
   }
 }

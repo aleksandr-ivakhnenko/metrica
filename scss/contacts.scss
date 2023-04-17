@@ -34,6 +34,7 @@
         }
     
         @media (max-width: 767px) {
+            flex-direction: column;
             gap: 68px 0;
         }
     }
