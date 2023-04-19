@@ -1,13 +1,13 @@
 .footer {
 	background-color: #121212;
 	padding: 60px 0 30px;
+	text-align: center;
 
 	@media (max-width: 767px) {
 		padding: 30px 0 26px;
 	}
 
 	&__container {
-		text-align: center;
 	}
 
 	&__nav {

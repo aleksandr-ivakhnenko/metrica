@@ -80,3 +80,85 @@ button {
   font-size: 20px;
   line-height: 27px;
 }
+
+.button-menu-burger {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  z-index: 100;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.button-menu-burger::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 4px);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #000000;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.button-menu-burger::after {
+  content: "";
+  position: absolute;
+  top: calc(50% + 4px);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+  width: 31px;
+  height: 2px;
+  background-color: #000000;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.button-menu-burger_open::before {
+  height: 2.5px;
+  top: 50%;
+  right: 8px;
+  width: 27px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-radius: 15px;
+}
+.button-menu-burger_open::after {
+  height: 2.5px;
+  top: 50%;
+  right: 8px;
+  width: 27px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  border-radius: 15px;
+}
+
+.button-close {
+  position: absolute;
+  top: 32px;
+  right: 34px;
+  width: 50px;
+  height: 50px;
+  background-image: url(../icons/close-button.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+@media (max-width: 1199px) {
+  .button-close {
+    right: 44px;
+  }
+}
+@media (max-width: 767px) {
+  .button-close {
+    top: 40px;
+    right: 29px;
+    width: 30px;
+    height: 30px;
+    background-image: url(../icons/close-button_mobile.svg);
+  }
+}

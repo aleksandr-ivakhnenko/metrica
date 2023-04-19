@@ -70,3 +70,82 @@ button {
 		line-height: 27px;
 	}
 }
+
+.button-menu-burger {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	transform: translateY(-10px);
+	z-index: 100;
+	transition: all 0.5s;
+	cursor: pointer;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: calc(50% - 4px);
+		transform: translateY(-50%);
+		right: 0;
+		width: 50px;
+		height: 2px;
+		background-color: #000000;
+		transition: all 0.5s;
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: calc(50% + 4px);
+		transform: translateY(-50%);
+		right: 0;
+		width: 31px;
+		height: 2px;
+		background-color: #000000;
+		transition: all 0.5s;
+	}
+
+	&_open {
+
+		&::before {
+			height: 2.5px;
+			top: 50%;
+			right: 8px;
+			width: 27px;
+			transform: rotate(45deg);
+			border-radius: 15px;
+		}
+		
+		&::after {
+			height: 2.5px;
+			top: 50%;
+			right: 8px;
+			width: 27px;
+			transform: rotate(-45deg);
+			border-radius: 15px;
+		}
+	}
+}
+
+.button-close {
+	position: absolute;
+    top: 32px;
+    right: 34px;
+    width: 50px;
+    height: 50px;
+    background-image: url(../icons/close-button.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+
+	@media (max-width: 1199px) {
+	    right: 44px;
+    }
+
+	@media (max-width: 767px) {
+    	top: 40px;
+    	right: 29px;
+    	width: 30px;
+    	height: 30px;
+    	background-image: url(../icons/close-button_mobile.svg);
+    }
+}

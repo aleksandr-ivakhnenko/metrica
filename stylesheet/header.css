@@ -2,7 +2,7 @@
   position: relative;
   z-index: 15;
 }
-.header__container {
+.header__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,13 +16,23 @@
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
 }
-.header__menu-btn {
-  display: none;
-}
 .header__img {
   max-height: 50px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+@media (max-width: 1199px) {
+  .header__nav {
+    display: none;
+  }
+}
+.header__button {
+  display: block;
+}
+@media (max-width: 1199px) {
+  .header__button {
+    display: block;
+  }
 }

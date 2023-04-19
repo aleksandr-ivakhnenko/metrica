@@ -3,6 +3,10 @@
 	z-index: 15;
 
 	&__container {
+		
+	}
+
+	&__inner {
 		display: flex;
 		align-items: center;
 		min-height: 91px;
@@ -10,10 +14,6 @@
 
 	&__logo {
 		flex: 1 1 auto;
-	}
-
-	&__menu-btn {
-		display: none;
 	}
 
 	&__link {
@@ -26,5 +26,17 @@
 	}
 
 	&__nav {
+
+		@media (max-width: 1199px) {
+			display: none;
+		}
+	}
+
+	&__button {
+		display: block;
+
+		@media (max-width: 1199px) {
+			display: block;
+		}
 	}
 }

@@ -1,14 +1,12 @@
 .footer {
   background-color: #121212;
   padding: 60px 0 30px;
+  text-align: center;
 }
 @media (max-width: 767px) {
   .footer {
     padding: 30px 0 26px;
   }
-}
-.footer__container {
-  text-align: center;
 }
 .footer__nav {
   margin-bottom: 87px;

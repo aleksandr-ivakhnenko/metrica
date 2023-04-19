@@ -14,35 +14,47 @@
 		<div class="wrapper">
 			<header class="header" id="header">
 				<div class="header__container container">
-					<div class="header__logo"><a class="header__link" href="index.html"><img src="images/logo.svg" alt="Логотип компании Метрика" class="header__img"></a></div>
-					<span class="header__menu-btn material-symbols-outlined">menu</span>
-					<nav class="header__nav nav">
-						<ul class="nav__list">
-							<li class="nav__item-list"><a class="nav__link link" href="#about-us">О нас</a></li>
-							<li class="nav__item-list"><a class="nav__link link" href="#projects">Проекты</a></li>
-							<li class="nav__item-list"><a class="nav__link link" href="#services">Услуги</a></li>
-							<li class="nav__item-list"><a class="nav__link link" href="#reviews">Отзывы</a></li>
-							<li class="nav__item-list"><a class="nav__link link" href="#contacts">Контакты</a></li>
-						</ul>
-					</nav>
-				</div>
-			</header>
-			<main class="main">
-				<div class="popup js-popup">
-					<div class="popup__content js-popup__content">
-						<button class="popup__close-button js-popup__close-button"></button>
-						<div class="order">
-							<div class="order__title">Заказать услугу</div>
-							<p class="order__description">Заполните форму, мы свяжемся с вами в течение суток</p>
-							<form class="order__form" id="order__form" method="get">
-								<input class="order__input input" type="text" name="name" placeholder="Имя">
-								<input class="order__input input" type="email" name="email" placeholder="Электронная почта">
-								<input class="order__input input" type="tel" name="phone" placeholder="Номер телефона">
-							</form>
-							<button class="order__button button-full-width button-full-width_inversion button-full-width_small" type="submit" form="order__form">Отправить</button>
+					<div class="header__inner">
+						<div class="header__logo">
+							<a class="header__link" href="index.html">
+								<img class="header__img" src="images/logo.svg" alt="Логотип компании Метрика">
+							</a>
+						</div>
+						<nav class="header__nav nav">
+							<ul class="nav__list">
+								<li class="nav__item-list"><a class="nav__link link" href="#about-us">О нас</a></li>
+								<li class="nav__item-list"><a class="nav__link link" href="#projects">Проекты</a></li>
+								<li class="nav__item-list"><a class="nav__link link" href="#services">Услуги</a></li>
+								<li class="nav__item-list"><a class="nav__link link" href="#reviews">Отзывы</a></li>
+								<li class="nav__item-list"><a class="nav__link link" href="#contacts">Контакты</a></li>
+							</ul>
+						</nav>
+						<button class="header__button button-menu-burger js-button-menu-burger"></button>
+						<div class="menu-burger js-menu-burger">
+							<div class="menu-burger__content js-menu-burger__content">
+								<div class="menu-burger__logo">
+									<img class="menu-burger__img" src="images/logo.svg" alt="Логотип компании Метрика">
+								</div>
+								<nav class="menu-burger__nav">
+									<ul class="menu-burger__list">
+										<li class="menu-burger__item-list"><a class="menu-burger__link " href="#about-us">О нас</a></li>
+										<li class="menu-burger__item-list"><a class="menu-burger__link" href="#projects">Проекты</a></li>
+										<li class="menu-burger__item-list"><a class="menu-burger__link" href="#services">Услуги</a></li>
+										<li class="menu-burger__item-list"><a class="menu-burger__link" href="#reviews">Отзывы</a></li>
+										<li class="menu-burger__item-list"><a class="menu-burger__link" href="#contacts">Контакты</a></li>
+									</ul>
+								</nav>
+								<div class="menu-burger__contacts">
+									<p class="menu-burger__text">для связи:</p>
+									<a class="menu-burger__link-number" href="tel:+79358954535">+7 935 <span>895-45-35</span></a>
+									<a class="menu-burger__link-telegram" href="https://t.me/alexViefbix" target="_blank">@alexViefbix</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
+			</header>
+			<main class="main">
 				<section class="intro">
 					<div class="intro__container container">
 						<h1 class="intro__title main-title">Современные и стильные интерьеры для комфортной жизни</h1>
@@ -137,6 +149,21 @@
 						<button class="projects__link-button js-projects__link-button button-full-width button-full-width_inversion js-btn">Заказать услугу</button>
 					</div>
 				</section>
+				<div class="popup js-popup">
+					<div class="popup__content js-popup__content">
+						<button class="popup__close-button js-popup__close-button button-close"></button>
+						<div class="order">
+							<div class="order__title">Заказать услугу</div>
+							<p class="order__description">Заполните форму, мы свяжемся с вами в течение суток</p>
+							<form class="order__form" id="order__form" method="get">
+								<input class="order__input input" type="text" name="name" placeholder="Имя">
+								<input class="order__input input" type="email" name="email" placeholder="Электронная почта">
+								<input class="order__input input" type="tel" name="phone" placeholder="Номер телефона">
+							</form>
+							<button class="order__button button-full-width button-full-width_inversion button-full-width_small" type="submit" form="order__form">Отправить</button>
+						</div>
+					</div>
+				</div>
 				<section class="reviews" id="reviews">
 					<div class="reviews__container container">
 						<h2 class="reviews__title title">Отзывы</h2>
@@ -236,6 +263,7 @@
 		</div>
 
 		<script src="js/gallery.js"></script>
-		<script src="js/popup.js"></script>
+		<!-- <script src="js/popup.js"></script> -->
+		<script src="js/burger.js"></script>
 	</body>
 </html>
