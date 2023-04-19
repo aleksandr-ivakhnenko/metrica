@@ -11,17 +11,32 @@
           align-items: center;
   min-height: 91px;
 }
+@media (max-width: 1199px) {
+  .header__inner {
+    min-height: 87px;
+  }
+}
+@media (max-width: 767px) {
+  .header__inner {
+    min-height: 78px;
+  }
+}
 .header__logo {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
 }
 .header__img {
-  max-height: 50px;
+  max-height: 21.42px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+@media (max-width: 767px) {
+  .header__img {
+    max-height: 16px;
+  }
 }
 @media (max-width: 1199px) {
   .header__nav {

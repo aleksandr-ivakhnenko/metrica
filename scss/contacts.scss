@@ -121,6 +121,10 @@
     &__link-telegram {
         opacity: 0.5;
 
+        @media (max-width: 767px) {
+            opacity: 1;
+        }
+
         &::after {
             content: "";
             position: absolute;
@@ -129,6 +133,10 @@
             width: 100%;
             height: 2px;
             background-color: #121212;
+
+            @media (max-width: 767px) {
+                display: none;
+            }
         }
     }
 }

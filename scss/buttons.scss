@@ -79,6 +79,10 @@ button {
 	z-index: 100;
 	cursor: pointer;
 	transition: all 0.3s;
+	
+	@media (max-width: 767px) {
+		transform: translateY(0);
+	}
 
 	&::before {
 		content: "";
@@ -90,18 +94,26 @@ button {
 		height: 2px;
 		background-color: #000000;
 		transition: all 0.3s;
+
+		@media (max-width: 767px) {
+			width: 38px;
+		}
 	}
 
 	&::after {
 		content: "";
 		position: absolute;
-		top: calc(50% + 4px);
+		top: calc(50% + 2px);
 		transform: translateY(-50%);
 		right: 0;
 		width: 31px;
 		height: 2px;
 		background-color: #000000;
 		transition: all 0.3s;
+
+		@media (max-width: 767px) {
+			width: 24px;
+		}
 	}
 
 	&_open {

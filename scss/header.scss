@@ -10,6 +10,14 @@
 		display: flex;
 		align-items: center;
 		min-height: 91px;
+
+		@media (max-width: 1199px) {
+			min-height: 87px;
+		}
+
+		@media (max-width: 767px) {
+			min-height: 78px;
+		}
 	}
 
 	&__logo {
@@ -20,9 +28,13 @@
 	}
 
 	&__img {
-		max-height: 50px;
+		max-height: 21.42px;
 		object-fit: cover;
 		object-position: center;
+
+		@media (max-width: 767px) {
+			max-height: 16px;
+		}
 	}
 
 	&__nav {
