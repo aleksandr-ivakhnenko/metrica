@@ -77,8 +77,8 @@ button {
 	height: 50px;
 	transform: translateY(-10px);
 	z-index: 100;
-	transition: all 0.5s;
 	cursor: pointer;
+	transition: all 0.3s;
 
 	&::before {
 		content: "";
@@ -89,7 +89,7 @@ button {
 		width: 50px;
 		height: 2px;
 		background-color: #000000;
-		transition: all 0.5s;
+		transition: all 0.3s;
 	}
 
 	&::after {
@@ -101,7 +101,7 @@ button {
 		width: 31px;
 		height: 2px;
 		background-color: #000000;
-		transition: all 0.5s;
+		transition: all 0.3s;
 	}
 
 	&_open {
